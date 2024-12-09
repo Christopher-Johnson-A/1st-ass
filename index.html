@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Request</title>
+    <style>
+        body{
+            font: optional;
+            margin:0;
+            padding:0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+            background-color: aliceblue;
+        }
+        .form-container {
+            width: 400px;
+            padding: 20px;
+            background-color:white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .form-container h1 {
+            text-align: center;
+            color:blue;
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            font-weight: bold;
+            margin: 10px  5px;
+        }
+        .form-container input, .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .form-container input[type="checkbox"],
+        .form-container input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .form-container button {
+            background-color:blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-container button:hover {
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+    <h1>Software Request</h1>
+    <form>
+        <label>Name *</label><br>
+        <input type="text"><br>
+        <label>Employee ID *</label><br>
+        <input type="text"><br>
+        <label>Email *</label><br>
+        <input type="text"><br>
+        <label>Mobile No / Extn No</label><br>
+        <input type="text">
+        <br>
+        <label>Which Software do you require? *</label><br>
+        <input type="checkbox" name="Software" value="A"><label>Software A</label><br>
+        <input type="checkbox" name="software" value="B"><label>Software B</label><br>
+        <input type="checkbox" name="Software" value="C"><label>Software C</label><br>
+        <label>How urgently do you need it? *</label><br>
+        <input type="checkbox" name="time" value="A"><label>As soos as possible</label><br>
+        <input type="checkbox" name="time" value="B"><label>Within 2 to 3 weeks</label><br>
+        <input type="checkbox" name="time" value="C"><label>I'm in no hurry</label><br>
+        <button type="submit">Request</button>
+        </form>
+    </div>
+</body>
+</html>
